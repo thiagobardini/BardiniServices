@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bardini Services</title>
+  <link rel="stylesheet" href="../_css/index.css"/>
+</head>
+<script language="javascript" src="../_javasript/funcoes.js"></script>
+<body>
+<div id="containeir"> 
+
+  <img id="icone" src="../_imagens/sublogoVermelhoTag.png"/>
+
+<div id="interface">
+
+  <header id="top-nav">
+    <ul> 
+     <li class="top-telephone"><img src="../_imagens/icons-telephone.png"/><a href="tel:(978)%20201-6952">&nbsp;(978) 201-6952</a></li>
+      <li><a href="https://www.facebook.com/bardiniservices" target="_blank"><img src="../_imagens/facebook-logo.png "/></a></li>
+      <li><a href="https://www.instagram.com/bardiniservices/"  target="_blank"><img src="../_imagens/instagram-logo.png"/></a></li>
+    </p>
+  </header>
+
+<header id="cabecalho">
+<figure id="logo-header">
+    <img src="../_imagens/logoComTagline.png"/>
+</figure> 
+
+<nav id="menu"> 
+  <h1>Menu Principal</h1>
+  <ul>
+    <li onmousemove="mudaFoto('../_imagens/sublogoVermelhoTag.png')" onmouseout="mudaFoto('../_imagens/sublogoVermelhoTag.png')"><a href="magic.html#home" target="janela">Home</a></li>
+    <li onmousemove="mudaFoto('../_imagens/cleaning.png')" onmouseout="mudaFoto('../_imagens/sublogoVermelhoTag.png')"><a href="magic.html#cleaning" target="janela"">Cleaning</a></li>
+    <li onmousemove="mudaFoto('../_imagens/handyman.png')" onmouseout="mudaFoto('../_imagens/sublogoVermelhoTag.png')"><a href="magic.html#handyman" target="janela">Handyman</a></li>
+    <li onmousemove="mudaFoto('../_imagens/testimonial.png')" onmouseout="mudaFoto('../_imagens/sublogoVermelhoTag.png')"><a href="magic.html#testimonials" target="janela">Testimonials</a></li>
+    <li onmousemove="mudaFoto('../_imagens/contato.png')" onmouseout="mudaFoto('../_imagens/sublogoVermelhoTag.png')"><a href="magic.html#contact" target="janela">Contact Us</a></li>
+  </ul>
+</nav>
+
+</header>
+
+
+<!-- Section START -->
+
+<section id="conteudo">   
+  <iframe src="magic.html" name="janela" id="frame-spec"></iframe>
+</section>
+
+<!-- Section END -->
+
+
+<footer id="rodape">
+  <p>Copyright &copy; 2020 - by Thiago Bardini<br/>
+  </footer>
+  </div> <!-- End div interface -->
+</div> <!-- End div containeir -->
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v8.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="147130602453036"
+theme_color="#69191b">
+</div>
+
+</body>
+</html>
