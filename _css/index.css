@@ -205,6 +205,11 @@ footer#rodape {
   border-top: 1px solid #606060;
 }
 
+footer iframe {
+  width: 900px;
+  height: 200px;
+}
+
 footer#rodape p {
   text-align: center;
 }
