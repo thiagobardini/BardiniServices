@@ -17,25 +17,21 @@ body {
   height: auto;
 }
 
-#containeir img#icone {
-  /* position: absolute;
-  top: 79px;
-  width: 100px;
-  left: 997px; */
-  position: sticky;
-  top: 84px;
-  width: 100px;
-  float: right;
+header {
+  min-width: -webkit-fill-available;
+  background-color: #ffffff;
+  margin: -20px auto 0px auto;
+  display: block; 
+  height: 40px;
+  position: relative;
+  border-bottom: 1px solid #dddddd; 
 }
 
 #interface {
   /* width: 900px; */
   min-width: -webkit-fill-available;
   background-color: #ffffff;
-  margin: -20px auto 0px auto; 
-  padding: 10px; 
-  border-left-style: outset;
-  border-right-style: inset;
+  margin: -20px auto 0px auto;
 }
 
 p {
@@ -51,66 +47,68 @@ a {
 a:hover {
   text-decoration: underline;
 }
-header {
+
+nav {
+  display: block;
   margin: 0px auto;
 }
 
-header#top-nav {
+nav#top-nav {
   display: block; 
-  height: 25px;
-  margin-top: 5px;
+  height: 9px;
   width: 900px;
   position: relative;
-  border-bottom: 1px solid #dddddd; 
 }
 
-header#top-nav ul {
+nav#top-nav ul {
   list-style: none;
   position: absolute;
   left: 645px;
-  top: -14px;
+  top: -24px;
 }
 
-header#top-nav li {
+nav#top-nav li {
   display: inline-block;
   margin-left: 10px;
 }
 
-header#top-nav a {
+nav#top-nav a {
   text-decoration: none;
 }
 
-header#top-nav .top-telephone a {
+nav#top-nav .top-telephone a {
   font-size: 16px;
   font-weight: bold;
   vertical-align: 4px;
 }
 
-header#cabecalho {
-  height: 148px;
+nav#cabecalho {
+  height: 160px;
   width: 900px;
  } 
 
-figure#logo-header img {
-  margin: 10px;
+
+nav img#icone {
   position: relative;
-  top: -19px;
-  left: -23px;
-  width: 334px;
+  top: 18px;
+  width: 100px;
+  float: right;
+  right: -27px;
 }
 
+nav img#logo-header {
+  position: relative;
+  top: 13px;
+  left: 0px;
+}
 
 /* Formatação do Menu */
-/* nav#menu {
-  /* display: inline-block; display block vai fazer que q o container flutue na tela. 
-} */
-
 nav#menu ul {
   list-style: none; /* vai tirar a marcação do UL */
   /* text-transform: uppercase; todas as palavras em letras MAIÚSCULA */
   position: relative;
-  top: -207px;
-  left: 402px;
+  top: -88px;
+  left: 306px;
 }
 
 nav#menu li {
@@ -140,13 +138,12 @@ nav#menu a:hover {
 }
 /* Start Section */
 section#conteudo {
-  min-width: auto;
   margin: 0px auto;
+  width: 900px;
 }
 
 iframe#frame-spec {
-  /* width: 900px; */
-  min-width: -webkit-fill-available;
+  width: 900px;
   height: 505px;
   border: none;
   overflow: hidden;
