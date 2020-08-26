@@ -101,9 +101,9 @@ figure#logo-header img {
 
 
 /* Formatação do Menu */
-nav#menu {
-  /* display: inline-block; display block vai fazer que q o container flutue na tela. */
-}
+/* nav#menu {
+  /* display: inline-block; display block vai fazer que q o container flutue na tela. 
+} */
 
 nav#menu ul {
   list-style: none; /* vai tirar a marcação do UL */
