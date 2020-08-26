@@ -10,11 +10,11 @@ body {
   color: rgba(0,0,0,1);
   font-size: 11pt;
 }
+ 
 
 #containeir {
-  width: 1000px;
+  min-width: -webkit-fill-available;
   height: auto;
-  margin:0px auto;
 }
 
 #containeir img#icone {
@@ -29,7 +29,8 @@ body {
 }
 
 #interface {
-  width: 900px;
+  /* width: 900px; */
+  min-width: -webkit-fill-available;
   background-color: #ffffff;
   margin: -20px auto 0px auto; 
   padding: 10px; 
@@ -49,6 +50,9 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+header {
+  margin: 0px auto;
 }
 
 header#top-nav {
@@ -83,7 +87,7 @@ header#top-nav .top-telephone a {
 }
 
 header#cabecalho {
-  height: 127px;
+  height: 148px;
   width: 900px;
  } 
 
@@ -92,20 +96,21 @@ figure#logo-header img {
   position: relative;
   top: -19px;
   left: -23px;
+  width: 334px;
 }
 
 
 /* Formatação do Menu */
 nav#menu {
-  display: inline-block; /* display block vai fazer que q o container flutue na tela. */
+  /* display: inline-block; display block vai fazer que q o container flutue na tela. */
 }
 
 nav#menu ul {
   list-style: none; /* vai tirar a marcação do UL */
-  text-transform: uppercase; /* todas as palavras em letras MAIÚSCULA */
-  position: relative; 
-  top: -186px;
-  left: 321px;
+  /* text-transform: uppercase; todas as palavras em letras MAIÚSCULA */
+  position: relative;
+  top: -207px;
+  left: 402px;
 }
 
 nav#menu li {
@@ -135,12 +140,13 @@ nav#menu a:hover {
 }
 /* Start Section */
 section#conteudo {
-  width: 1000px;
-  margin: auto;
+  min-width: auto;
+  margin: 0px auto;
 }
 
 iframe#frame-spec {
-  width: 900px;
+  /* width: 900px; */
+  min-width: -webkit-fill-available;
   height: 505px;
   border: none;
   overflow: hidden;
@@ -161,12 +167,12 @@ footer#rodape {
 }
 
 footer iframe {
-  width: 1000px;
+  /* width: 1000px; */
+  min-width: -webkit-fill-available;
   height: 200px;
-  
 }
 footer#rodape {
-  font-size: 14px;
+  font-size: 11pt;
   font-weight: bold;
   color: #606060;
 }
