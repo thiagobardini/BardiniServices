@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Titillium+Web&display=swap'); 
+@font-face { 
+  font-family: FonteLogo; 
+  src: url(../_fonts/bubblegum-sans-regular.otf); 
+} 
+
+body {
+  font-family: arial, sans-serif;  
+  background-color: #dddddd;
+  color: rgba(0,0,0,1);
+  font-size: 11pt;
+}
+
+#containeir {
+  width: 1000px;
+  height: auto;
+  margin:0px auto;
+}
+
+#containeir img#icone {
+  /* position: absolute;
+  top: 79px;
+  width: 100px;
+  left: 997px; */
+  position: sticky;
+  top: 84px;
+  width: 100px;
+  float: right;
+}
+
+#interface {
+  width: 900px;
+  background-color: #ffffff;
+  margin: -20px auto 0px auto; /* Margin é a área externa. Sequencia do valores: acima, direita, abaixo, esquerda */
+  /* box-shadow: 0px 0px 10px rgba(0,0,0,.5);Serve para sobra -> Valores: deslocamento lateral, deslocamento vertical, espalhamento da sombra e transparencia de 0.0 até 1 */
+  padding: 10px; /* Padding é a área interna. Sequencia do valores: acima, direita, abaixo, esquerda */
+  border-left-style: outset;
+  border-right-style: inset;
+}
+
+p {
+  text-align: justify;
+  text-indent: 50px;
+} 
+
+a {
+  color: #606060;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header#top-nav {
+  display: block; 
+  height: 25px;
+  margin-top: 5px;
+  width: 900px;
+  position: relative;
+  border-bottom: 1px solid #dddddd; 
+}
+
+header#top-nav ul {
+  list-style: none;
+  position: absolute;
+  left: 645px;
+  top: -14px;
+}
+
+header#top-nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+header#top-nav a {
+  text-decoration: none;
+}
+
+header#top-nav .top-telephone a {
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+header#cabecalho {
+  height: 127px;
+  width: 900px;
+  /* border-bottom: 1px #606060 solid;   */
+
+ } 
+
+figure#logo-header img {
+  margin: 10px;
+  position: relative;
+  top: -19px;
+  left: -23px;
+}
+
+
+/* Formatação do Menu */
+nav#menu {
+  display: inline-block; /* display block vai fazer que q o container flutue na tela. */
+}
+
+nav#menu ul {
+  list-style: none; /* vai tirar a marcação do UL */
+  text-transform: uppercase; /* todas as palavras em letras MAIÚSCULA */
+  position: relative; 
+  top: -186px;
+  left: 321px;
+}
+
+nav#menu li {
+  display: inline-block; /* inline-block -> vai fazer ficar na mesma linha em blocos */
+  background-color: #69191c; /* cor do fundo */
+  padding: 10px; /* vai criar um espaço dentro dos botoes */
+  margin: 2px; /* vai criar um espaço fora dos botões */
+  transition: background-color 1s; /* transition vai fazer que hover apareça 1 segundo após o mouse estiver sobre o botão */
+}
+
+nav#menu li:hover {
+  background-color: #606060;
+}
+
+nav#menu h1 {
+  display: none; /* vai escoder tudo que for h1 */
+}
+
+nav#menu a {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+nav#menu a:hover {
+  color: white;
+  text-decoration: underline;
+}
+/* Start Section */
+section#conteudo {
+  width: 1000px;
+  margin: auto;
+}
+
+iframe#frame-spec {
+  width: 900px;
+  height: 505px;
+  border: none;
+  overflow: hidden;
+  border-style: ridge;
+}
+
+iframe#frame-spec::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+/* End Section */
+
+footer#rodape {
+  clear: both; /* O Clear BOTH vai fazer com que esse conteudo fique fora da divisao do aside e da section */
+  /* border-top: 1px solid #606060; */
+  background-color: #dddddd;
+  /* margin: 0 auto; */
+}
+
+footer iframe {
+  width: 1000px;
+  height: 200px;
+  
+}
+footer#rodape {
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #606060;
+}
+
+footer#rodape ul {
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+footer#rodape li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+footer#rodape a:hover {
+  text-decoration: none;
+}
+
+footer#rodape p {
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+footer#rodape .copyright {
+  text-align: center;
+}

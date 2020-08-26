@@ -14,7 +14,7 @@ body {
 #containeir {
   width: 1000px;
   height: auto;
-  margin:0 auto;
+  margin:0px auto;
 }
 
 #containeir img#icone {
@@ -31,9 +31,10 @@ body {
 #interface {
   width: 900px;
   background-color: #ffffff;
-  margin: -20px auto 0px auto; /* Margin é a área externa. Sequencia do valores: acima, direita, abaixo, esquerda */
-  box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* Serve para sobra -> Valores: deslocamento lateral, deslocamento vertical, espalhamento da sombra e transparencia de 0.0 até 1 */
-  padding: 10px; /* Padding é a área interna. Sequencia do valores: acima, direita, abaixo, esquerda */
+  margin: -20px auto 0px auto; 
+  padding: 10px; 
+  border-left-style: outset;
+  border-right-style: inset;
 }
 
 p {
@@ -56,7 +57,7 @@ header#top-nav {
   margin-top: 5px;
   width: 900px;
   position: relative;
-  border-bottom: 1px solid #606060; 
+  border-bottom: 1px solid #dddddd; 
 }
 
 header#top-nav ul {
@@ -76,16 +77,14 @@ header#top-nav a {
 }
 
 header#top-nav .top-telephone a {
-  font-family: "Work Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
-  vertical-align: top;
+  vertical-align: 4px;
 }
 
 header#cabecalho {
   height: 127px;
   width: 900px;
-  /* border-bottom: 1px #606060 solid;   */
  } 
 
 figure#logo-header img {
@@ -145,71 +144,54 @@ iframe#frame-spec {
   height: 505px;
   border: none;
   overflow: hidden;
+  border-style: ridge;
 }
 
 iframe#frame-spec::-webkit-scrollbar {
   display: none;
 }
 
-/*
-@keyframes slideshow
-{
-	10% {left: 0;}
-	20% {left: 0;}
-	30% {left: -100%;}
-	40% {left: -100%;}
-	50% {left: -200%;}
-	60% {left: -200%;}
-	70% {left: -300%;}
-	80% {left: -300%;}
-	90% {left: -400%;}
-	100% {left: -400%}
-}
-
-#slider
-{
-  overflow:hidden; 
-  width:790px;
-  height:490px;
-  background-size: cover;
-  margin:5px auto;
-  padding-bottom: 5px;
-  border:5px;
-  border-radius: 5px;
-  float:left;
-  margin-left: 5px;
-  margin-bottom: 5px;
-}
-
-#slider figure img
-{
-    width:20%;
-    float:left;
-}
-#slider figure
-{
-    position:relative;
-    width:500%;
-    margin:0;
-    left:0;
-    text-align:left;
-    animation:20s slideshow infinite
-} */
 
 
 
 /* End Section */
 
 footer#rodape {
-  clear: both; /* O Clear BOTH vai fazer com que esse conteudo fique fora da divisao do aside e da section */
-  border-top: 1px solid #606060;
+  background-color: #dddddd;
 }
 
 footer iframe {
-  width: 900px;
+  width: 1000px;
   height: 200px;
+  
+}
+footer#rodape {
+  font-size: 14px;
+  font-weight: bold;
+  color: #606060;
+}
+
+footer#rodape ul {
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+footer#rodape li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+footer#rodape a:hover {
+  text-decoration: none;
 }
 
 footer#rodape p {
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+footer#rodape .copyright {
   text-align: center;
 }
