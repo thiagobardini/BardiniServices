@@ -31,8 +31,9 @@ body {
 #interface {
   width: 900px;
   background-color: #ffffff;
-  margin: -20px auto 0px auto; 
-  padding: 10px; 
+  margin: -20px auto 0px auto; /* Margin é a área externa. Sequencia do valores: acima, direita, abaixo, esquerda */
+  /* box-shadow: 0px 0px 10px rgba(0,0,0,.5);Serve para sobra -> Valores: deslocamento lateral, deslocamento vertical, espalhamento da sombra e transparencia de 0.0 até 1 */
+  padding: 10px; /* Padding é a área interna. Sequencia do valores: acima, direita, abaixo, esquerda */
   border-left-style: outset;
   border-right-style: inset;
 }
@@ -77,14 +78,17 @@ header#top-nav a {
 }
 
 header#top-nav .top-telephone a {
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
-  vertical-align: 4px;
+  vertical-align: top;
 }
 
 header#cabecalho {
   height: 127px;
   width: 900px;
+  /* border-bottom: 1px #606060 solid;   */
+
  } 
 
 figure#logo-header img {
@@ -157,7 +161,10 @@ iframe#frame-spec::-webkit-scrollbar {
 /* End Section */
 
 footer#rodape {
+  clear: both; /* O Clear BOTH vai fazer com que esse conteudo fique fora da divisao do aside e da section */
+  /* border-top: 1px solid #606060; */
   background-color: #dddddd;
+  /* margin: 0 auto; */
 }
 
 footer iframe {
@@ -166,6 +173,7 @@ footer iframe {
   
 }
 footer#rodape {
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: #606060;
