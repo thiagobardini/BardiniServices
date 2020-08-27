@@ -6,32 +6,36 @@
 
 body {
   font-family: arial, sans-serif;  
-  background-color: #dddddd;
+  background-color: #606060;;
   color: rgba(0,0,0,1);
   font-size: 11pt;
 }
  
 
 #containeir {
-  min-width: -webkit-fill-available;
+  min-width: max-content;
   height: auto;
 }
 
 header {
-  min-width: -webkit-fill-available;
-  background-color: #ffffff;
+  min-width: max-content;
+  background-color: #69191c;
   margin: -20px auto 0px auto;
   display: block; 
   height: 40px;
   position: relative;
   border-bottom: 1px solid #dddddd; 
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 #interface {
   /* width: 900px; */
-  min-width: -webkit-fill-available;
+  min-width: max-content;
   background-color: #ffffff;
   margin: -20px auto 0px auto;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 p {
@@ -80,10 +84,11 @@ nav#top-nav .top-telephone a {
   font-size: 16px;
   font-weight: bold;
   vertical-align: 4px;
+  color: #ffffff;
 }
 
 nav#cabecalho {
-  height: 160px;
+  height: 143px;
   width: 900px;
  } 
 
@@ -93,7 +98,7 @@ nav img#icone {
   top: 18px;
   width: 100px;
   float: right;
-  right: -27px;
+  right: -61px;
 }
 
 nav img#logo-header {
@@ -103,12 +108,56 @@ nav img#logo-header {
 }
 
 /* Formatação do Menu */
+
+nav#top-request ul {
+  list-style: none; /* vai tirar a marcação do UL */
+  /* text-transform: uppercase; todas as palavras em letras MAIÚSCULA */
+  position: relative;
+  top: -64px;
+  float: right;
+  right: -333px;
+}
+
+nav#top-request li {
+  display: inline-block; /* inline-block -> vai fazer ficar na mesma linha em blocos */
+  background-color: none; /* cor do fundo */
+  padding: 10px; /* vai criar um espaço dentro dos botoes */
+  margin: 2px; /* vai criar um espaço fora dos botões */
+  transition: background-color 1s; /* transition vai fazer que hover apareça 1 segundo após o mouse estiver sobre o botão */
+  border: solid 1px #69191c;
+}
+
+nav#top-request li:hover {
+  background-color: #69191c;
+}
+
+nav#top-request h1 {
+  display: none; /* vai escoder tudo que for h1 */
+}
+
+nav#top-request a {
+  font-style: italic;
+  font-family: 'Noto Serif', serif;
+  letter-spacing: 0.05em;
+  transition: 0.4s ease;
+  border-radius: 3px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+nav#top-request a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Start nav menu */
 nav#menu ul {
   list-style: none; /* vai tirar a marcação do UL */
   /* text-transform: uppercase; todas as palavras em letras MAIÚSCULA */
   position: relative;
-  top: -88px;
-  left: 306px;
+  top: -112px;
+  float: right;
+  right: 53px;
 }
 
 nav#menu li {
@@ -128,7 +177,7 @@ nav#menu h1 {
 }
 
 nav#menu a {
-  color: #dddddd;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -136,65 +185,96 @@ nav#menu a:hover {
   color: white;
   text-decoration: underline;
 }
+/* End nav menu */
+
 /* Start Section */
+
 section#conteudo {
   margin: 0px auto;
   width: 1000px;
-}
-
-iframe#frame-spec {
-  width: 1000px;
-  height: 505px;
-  border: none;
-  overflow: hidden;
   border-style: ridge;
 }
 
-iframe#frame-spec::-webkit-scrollbar {
-  display: none;
+section#conteudo img {
+  width: 1000px;
 }
-
-
-
 
 /* End Section */
 
 footer#rodape {
-  background-color: #dddddd;
-}
-
-footer iframe {
-  width: 1000px;
-  /* min-width: -webkit-fill-available; */
-  height: 200px;
-}
-footer#rodape {
+  background-color: #ccc;
   font-size: 11pt;
   font-weight: bold;
-  color: #606060;
+  color: #0f1f37;
+  margin-left: -8px;
+  margin-right: -8px;
+  min-width: max-content;
+  height: auto;
 }
 
-footer#rodape ul {
-  list-style: none;
+#footer-txt {
+  width: 1000px;
+  height: auto;
+  margin: 0px auto;
+  display: block;
+}
+
+#footer-txt .find {
+  float: left;
+  width: 160px;
+  text-align: left;
+  margin-left: -50px;
+  height: auto;
+  top: 18px;
   position: relative;
-  text-align: center;
+  color: #ffffff;
 }
 
-footer#rodape li {
+#footer-txt .footer-contact {
+  width: 800px;
+  height: auto;
+  float: right;
+  text-align: right;
+  position: relative;
+  top: 11px;
+}
+
+#footer-txt .footer-contact a {
+  color: #ffffff;
+}
+
+#footer-txt .footer-contact ul {
+  list-style: none; 
+}
+
+#footer-txt .footer-contact img {
+  top: 3px;
+  position: relative;
+}
+
+#footer-txt .footer-contact li {
   display: inline-block;
   margin-left: 10px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
-footer#rodape a:hover {
+#footer-txt .footer-contact a:hover {
   text-decoration: none;
 }
 
-footer#rodape p {
-  text-align: center;
-  margin-bottom: 1px;
+#iframe-div iframe {
+  margin: 0px auto;
+  text-align:center;
+  width: 1000px;
+  height: 200px;
 }
 
-footer#rodape .copyright {
+iframe {
+  display: block;
+}
+
+
+.copyright {
   text-align: center;
+  color: #ffffff;
 }
