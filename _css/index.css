@@ -139,11 +139,11 @@ nav#menu a:hover {
 /* Start Section */
 section#conteudo {
   margin: 0px auto;
-  width: 900px;
+  width: 1000px;
 }
 
 iframe#frame-spec {
-  width: 900px;
+  width: 1000px;
   height: 505px;
   border: none;
   overflow: hidden;
@@ -164,8 +164,8 @@ footer#rodape {
 }
 
 footer iframe {
-  /* width: 1000px; */
-  min-width: -webkit-fill-available;
+  width: 1000px;
+  /* min-width: -webkit-fill-available; */
   height: 200px;
 }
 footer#rodape {
