@@ -10,28 +10,32 @@ body {
   color: rgba(0,0,0,1);
   font-size: 11pt;
 }
- 
 
 #containeir {
-  min-width: -webkit-fill-available;
+  width: 1000px;
   height: auto;
+  margin:0px auto;
 }
 
-header {
-  min-width: -webkit-fill-available;
-  background-color: #ffffff;
-  margin: -20px auto 0px auto;
-  display: block; 
-  height: 40px;
-  position: relative;
-  border-bottom: 1px solid #dddddd; 
+#containeir img#icone {
+  /* position: absolute;
+  top: 79px;
+  width: 100px;
+  left: 997px; */
+  position: sticky;
+  top: 84px;
+  width: 100px;
+  float: right;
 }
 
 #interface {
-  /* width: 900px; */
-  min-width: -webkit-fill-available;
+  width: 900px;
   background-color: #ffffff;
-  margin: -20px auto 0px auto;
+  margin: -20px auto 0px auto; /* Margin é a área externa. Sequencia do valores: acima, direita, abaixo, esquerda */
+  /* box-shadow: 0px 0px 10px rgba(0,0,0,.5);Serve para sobra -> Valores: deslocamento lateral, deslocamento vertical, espalhamento da sombra e transparencia de 0.0 até 1 */
+  padding: 10px; /* Padding é a área interna. Sequencia do valores: acima, direita, abaixo, esquerda */
+  border-left-style: outset;
+  border-right-style: inset;
 }
 
 p {
@@ -48,67 +52,64 @@ a:hover {
   text-decoration: underline;
 }
 
-nav {
-  display: block;
-  margin: 0px auto;
-}
-
-nav#top-nav {
+header#top-nav {
   display: block; 
-  height: 9px;
+  height: 25px;
+  margin-top: 5px;
   width: 900px;
   position: relative;
+  border-bottom: 1px solid #dddddd; 
 }
 
-nav#top-nav ul {
+header#top-nav ul {
   list-style: none;
   position: absolute;
   left: 645px;
-  top: -24px;
+  top: -14px;
 }
 
-nav#top-nav li {
+header#top-nav li {
   display: inline-block;
   margin-left: 10px;
 }
 
-nav#top-nav a {
+header#top-nav a {
   text-decoration: none;
 }
 
-nav#top-nav .top-telephone a {
+header#top-nav .top-telephone a {
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
-  vertical-align: 4px;
+  vertical-align: top;
 }
 
-nav#cabecalho {
-  height: 160px;
+header#cabecalho {
+  height: 127px;
   width: 900px;
+  /* border-bottom: 1px #606060 solid;   */
+
  } 
 
-
-nav img#icone {
+figure#logo-header img {
+  margin: 10px;
   position: relative;
-  top: 18px;
-  width: 100px;
-  float: right;
-  right: -27px;
+  top: -19px;
+  left: -23px;
 }
 
-nav img#logo-header {
-  position: relative;
-  top: 13px;
-  left: 0px;
-}
 
 /* Formatação do Menu */
+nav#menu {
+  display: inline-block; /* display block vai fazer que q o container flutue na tela. */
+}
+
 nav#menu ul {
   list-style: none; /* vai tirar a marcação do UL */
-  /* text-transform: uppercase; todas as palavras em letras MAIÚSCULA */
-  position: relative;
-  top: -88px;
-  left: 306px;
+  text-transform: uppercase; /* todas as palavras em letras MAIÚSCULA */
+  position: relative; 
+  top: -186px;
+  left: 321px;
 }
 
 nav#menu li {
@@ -138,12 +139,12 @@ nav#menu a:hover {
 }
 /* Start Section */
 section#conteudo {
-  margin: 0px auto;
   width: 1000px;
+  margin: auto;
 }
 
 iframe#frame-spec {
-  width: 1000px;
+  width: 900px;
   height: 505px;
   border: none;
   overflow: hidden;
@@ -160,17 +161,20 @@ iframe#frame-spec::-webkit-scrollbar {
 /* End Section */
 
 footer#rodape {
+  clear: both; /* O Clear BOTH vai fazer com que esse conteudo fique fora da divisao do aside e da section */
+  /* border-top: 1px solid #606060; */
   background-color: #dddddd;
+  /* margin: 0 auto; */
 }
 
 footer iframe {
   width: 1000px;
-  /* min-width: -webkit-fill-available; */
   height: 200px;
-  margin-top: -12px;
+  
 }
 footer#rodape {
-  font-size: 11pt;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   font-weight: bold;
   color: #606060;
 }

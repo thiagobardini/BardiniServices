@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Titillium+Web&display=swap'); 
-@font-face { 
-  font-family: FonteLogo; 
-  src: url(../_fonts/bubblegum-sans-regular.otf); 
-} 
-
 body {
   font-family: arial, sans-serif;  
   background-color: #606060;;
@@ -14,23 +8,19 @@ body {
 
 #containeir {
   min-width: max-content;
-  height: auto;
 }
 
-header {
+header#top-header {
   min-width: max-content;
   background-color: #69191c;
   margin: -20px auto 0px auto;
-  display: block; 
-  height: 40px;
-  position: relative;
-  border-bottom: 1px solid #dddddd; 
+  height: 65px;
+  /* border-bottom: 1px solid #dddddd;  */
   margin-left: -8px;
   margin-right: -8px;
 }
 
 #interface {
-  /* width: 900px; */
   min-width: max-content;
   background-color: #ffffff;
   margin: -20px auto 0px auto;
@@ -44,7 +34,6 @@ p {
 } 
 
 a {
-  color: #606060;
   text-decoration: none;
 }
 
@@ -52,23 +41,27 @@ a:hover {
   text-decoration: underline;
 }
 
-nav {
-  display: block;
+nav#block-nav {
+  /* display: block; */
   margin: 0px auto;
+  width: 1050px;
+  height: 126px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 nav#top-nav {
-  display: block; 
-  height: 9px;
-  width: 900px;
+  display: block;
+  height: 50px;
+  width: 255px;
   position: relative;
+  float: right;
+  top: -52px;
+  margin-right: 20px;
 }
 
 nav#top-nav ul {
   list-style: none;
-  position: absolute;
-  left: 645px;
-  top: -24px;
 }
 
 nav#top-nav li {
@@ -87,89 +80,39 @@ nav#top-nav .top-telephone a {
   color: #ffffff;
 }
 
-nav#cabecalho {
-  height: 143px;
-  width: 900px;
+nav#logo-nav {
+  height: 126px;
+  width: 279px;
+  float: left;
+  margin-left: 25px;
  } 
 
-
-nav img#icone {
-  position: relative;
-  top: 18px;
-  width: 100px;
-  float: right;
-  right: -61px;
-}
-
-nav img#logo-header {
-  position: relative;
-  top: 13px;
-  left: 0px;
+nav img#logo-bardini {
+  float: left;
 }
 
 /* Formatação do Menu */
-
-nav#top-request ul {
-  list-style: none; /* vai tirar a marcação do UL */
-  /* text-transform: uppercase; todas as palavras em letras MAIÚSCULA */
+nav#holder-menu {
   position: relative;
-  top: -64px;
-  float: right;
-  right: -333px;
+  top: 25px;
+  right: 20px;
+}
+nav#menu {
+  width: 620px;
+  height: auto;
+  float: left;
 }
 
-nav#top-request li {
-  display: inline-block; /* inline-block -> vai fazer ficar na mesma linha em blocos */
-  background-color: none; /* cor do fundo */
-  padding: 10px; /* vai criar um espaço dentro dos botoes */
-  margin: 2px; /* vai criar um espaço fora dos botões */
-  transition: background-color 1s; /* transition vai fazer que hover apareça 1 segundo após o mouse estiver sobre o botão */
-  border: solid 1px #69191c;
-}
-
-nav#top-request li:hover {
-  background-color: #69191c;
-}
-
-nav#top-request h1 {
-  display: none; /* vai escoder tudo que for h1 */
-}
-
-nav#top-request a {
-  font-style: italic;
-  font-family: 'Noto Serif', serif;
-  letter-spacing: 0.05em;
-  transition: 0.4s ease;
-  border-radius: 3px;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-nav#top-request a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-/* Start nav menu */
 nav#menu ul {
   list-style: none; /* vai tirar a marcação do UL */
   /* text-transform: uppercase; todas as palavras em letras MAIÚSCULA */
-  position: relative;
-  top: -112px;
-  float: right;
-  right: 53px;
+  /* float: right; */
 }
 
 nav#menu li {
   display: inline-block; /* inline-block -> vai fazer ficar na mesma linha em blocos */
-  background-color: #69191c; /* cor do fundo */
-  padding: 10px; /* vai criar um espaço dentro dos botoes */
-  margin: 2px; /* vai criar um espaço fora dos botões */
-  transition: background-color 1s; /* transition vai fazer que hover apareça 1 segundo após o mouse estiver sobre o botão */
-}
-
-nav#menu li:hover {
-  background-color: #606060;
+  padding: 5px; /* vai criar um espaço dentro dos botoes */
+  letter-spacing: 0.05em;
 }
 
 nav#menu h1 {
@@ -177,15 +120,42 @@ nav#menu h1 {
 }
 
 nav#menu a {
-  color: #fff;
+  color: #69191c;
   text-decoration: none;
 }
 
 nav#menu a:hover {
-  color: white;
   text-decoration: underline;
 }
-/* End nav menu */
+
+nav#menu .menu-estimate {
+  display: inline-block; /* inline-block -> vai fazer ficar na mesma linha em blocos */
+  background-color: #69191c; 
+  padding: 10px; /* vai criar um espaço dentro dos botoes */
+  margin: 2px; /* vai criar um espaço fora dos botões */
+  transition: background-color 1s; /* transition vai fazer que hover apareça 1 segundo após o mouse estiver sobre o botão */
+  /* border: solid 1px #69191c; */
+  border-radius: 3px;
+}
+
+nav#menu .menu-estimate a {
+  font-style: italic;
+  font-family: 'Noto Serif', serif;
+  letter-spacing: 0.05em;
+  transition: 0.4s ease;
+  color: #ffffff;
+}
+
+
+nav#menu .menu-estimate a:hover {
+  text-decoration: underline;
+}
+
+nav img#icone {
+  position: relative;
+  /* width: 115px; */
+  top: -55px;
+}
 
 /* Start Section */
 
