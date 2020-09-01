@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bardini Services</title>
+  <link rel="stylesheet" href="_css/index.css">
+</head>
+<script language="javascript" src="_javasript/funcoes.js"></script>
+<body>
+<div id="containeir"> 
+<header id="top-header">
+ 
+</header>
+<div id="interface">
+
+  <nav id="block-nav">
+    <nav id="top-nav">
+      <ul> 
+      <li class="top-telephone"><img src="_imagens/telephone-white.png"/><a href="tel:(978)%20201-6952">&nbsp;(978) 201-6952</a></li>
+        <li><a href="https://www.facebook.com/bardiniservices" target="_blank"><img src="_imagens/facebook-white.png "/></a></li>
+        <li><a href="https://www.instagram.com/bardiniservices/"  target="_blank"><img src="_imagens/instag-white.png"/></a></li>
+      </ul>
+    </nav>
+    <nav id="logo-nav">
+      <img id="logo-bardini" src="_imagens/logoComTagline.png"/> 
+    </nav>
+    <nav id="holder-menu">
+      <nav id="menu"> 
+        <h1>Main menu</h1>
+        <ul>
+          <li onmousemove="mudaFoto('_imagens/sublogoVermelhoTag.png')" onmouseout="mudaFoto('_imagens/sublogoVermelhoTag.png')"><a href="index.htm">Home</a></li>
+          <!-- <li onmousemove="mudaFoto('_imagens/cleaning.png')" onmouseout="mudaFoto('_imagens/sublogoVermelhoTag.png')"><a href="magic.html#cleaning" target="janela"">Cleaning</a></li>
+          <li onmousemove="mudaFoto('_imagens/handyman.png')" onmouseout="mudaFoto('_imagens/sublogoVermelhoTag.png')"><a href="magic.html#handyman" target="janela">Handyman</a></li>
+          <li onmousemove="mudaFoto('_imagens/testimonial1.png')" onmouseout="mudaFoto('_imagens/sublogoVermelhoTag.png')"><a href="magic.html#testimonials" target="janela">Testimonials</a></li>
+          <li onmousemove="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/sublogoVermelhoTag.png')"><a href="magic.html#contact" target="janela">Contact Us</a></li> -->
+          <li class="menu-estimate" onmousemove="mudaFoto('_imagens/estimate.png')" onmouseout="mudaFoto('_imagens/sublogoVermelhoTag.png')"><a href="request.htm">Request an Estimate</a></li>
+        </ul>
+    </nav>
+  </nav>
+      <img id="icone" src="_imagens/sublogoVermelhoTag.png"/>
+
+</nav>
+
+<!-- Section START -->
+
+<section id="conteudo">   
+    <img src="_imagens/ima-bardiniservices.jpeg" alt="bardini services"> 
+  <!-- <iframe src="magic.html" name="janela" id="frame-spec"></iframe> -->
+</section>
+<!-- Section END -->
+
+
+</div> <!-- End div interface -->
+
+<footer id="rodape">
+  <div id="footer-txt">
+    <p class="find">Find us:</p>
+    
+    <ul class="footer-contact"> 
+      <li><img src="_imagens/icons-telephone.png"/><a href="tel:(978)%20201-6952">&nbsp;(978) 201-6952</a></li>
+       <li><a href="https://www.facebook.com/bardiniservices" target="_blank"><img src="_imagens/facebook-logo.png "/>&nbsp;@bardiniservices</a></li>
+       <li><a href="https://www.instagram.com/bardiniservices/"  target="_blank"><img src="_imagens/instagram-logo.png"/>&nbsp;@bardiniservices</a></li>
+     </ul>  
+ 
+    </div>
+  <div id="iframe-div">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1514526.3398312258!2d-72.57888674218748!3d42.1490187408547!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3656de973bffd%3A0x45c6d03655830d1c!2sMassachusetts!5e0!3m2!1sen!2sus!4v1598542213124!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+  </div> 
+    
+</footer>
+<p class="copyright">Copyright &copy; 2020 - by Bardini Services</p>
+</div> <!-- End div containeir -->
+  </body>
+  </html>
+
+
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v8.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="147130602453036"
+theme_color="#69191b">
+</div>
+
+</body>
+</html>
