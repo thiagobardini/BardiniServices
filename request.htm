@@ -2,17 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="_css/index.css">
+  <script language="javascript" src="_javasript/funcoes.js"></script>
   <title>Bardini Services</title>
   <style>
-    iframe#resquest-form {
-      width:1000px
+    section#conteudo {
+      margin: 0px auto;
+      height: 1220px;
     }
-  </style>
+    iframe#resquest-form  {
+      height: 1220px;
+      width: 1000px;
+    }
+    iframe#request-form::-webkit-scrollbar {
+    display: none;
+    }
+    </style>
+  
 </head>
-<script language="javascript" src="_javasript/funcoes.js"></script>
+
 <body>
 <div id="containeir"> 
 <header id="top-header">
@@ -45,13 +54,12 @@
     </nav>
   </nav>
       <img id="icone" src="_imagens/sublogoVermelhoTag.png"/>
-
 </nav>
 
 <!-- Section START -->
-
 <section id="conteudo">   
-  <iframe id="resquest-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfajmZdCkB7O88h0V9ICV5Bk5fiAbcIO13pyqa2aNdT7iL-uQ/viewform?embedded=true" width="900" height="1099" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfajmZdCkB7O88h0V9ICV5Bk5fiAbcIO13pyqa2aNdT7iL-uQ/viewform?embedded=true" width="640" height="1099" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfajmZdCkB7O88h0V9ICV5Bk5fiAbcIO13pyqa2aNdT7iL-uQ/viewform?usp=sf_link" id="resquest-form"></iframe>
 </section>
 <!-- Section END -->
 
@@ -78,8 +86,8 @@
 </footer>
 <p class="copyright">Copyright &copy; 2020 - by Bardini Services</p>
 </div> <!-- End div containeir -->
-  </body>
-  </html>
+  <!-- </body>
+  </html> -->
 
 
 

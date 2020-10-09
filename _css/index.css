@@ -4,7 +4,19 @@ body {
   color: rgba(0,0,0,1);
   font-size: 11pt;
 }
- 
+
+p {
+  text-align: justify;
+  text-indent: 50px;
+} 
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 #containeir {
   min-width: max-content;
@@ -20,25 +32,58 @@ header#top-header {
   margin-right: -15px;
 }
 
+#holder-top-nav {
+  width: 1000px;
+  margin: 0px auto;
+  display: block;
+}
+
+header#top-nav {
+  height: 50px;
+  width: 255px;
+  position: relative;
+  float: right;
+  top: 2px;
+}
+
+header#top-nav ul {
+  list-style: none;
+}
+
+header#top-nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+header#top-nav a {
+  text-decoration: none;
+}
+
+header#top-nav .top-telephone a {
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: 4px;
+  color: #ffffff;
+}
+
+#holder-top-mob {
+  display:none;
+}
+
+#top-mobile {
+  display: none;
+}
+
+.top-tele {
+  display: none;
+}
+
 #interface {
   min-width: max-content;
   background-color: #ffffff;
   margin: -20px auto 0px auto;
   margin-left: -15px;
   margin-right: -15px;
-}
-
-p {
-  text-align: justify;
-  text-indent: 50px;
-} 
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 nav#block-nav {
@@ -50,34 +95,20 @@ nav#block-nav {
   padding-bottom: 10px;
 }
 
-nav#top-nav {
-  display: block;
-  height: 50px;
-  width: 255px;
-  position: relative;
-  float: right;
-  top: -52px;
-  margin-right: 20px;
+#holder-menu-bar {
+  display:none;
 }
 
-nav#top-nav ul {
-  list-style: none;
+#menuBar {
+  display: none;
 }
 
-nav#top-nav li {
-  display: inline-block;
-  margin-left: 10px;
+#menuNAVBar {
+  display: none;
 }
 
-nav#top-nav a {
-  text-decoration: none;
-}
-
-nav#top-nav .top-telephone a {
-  font-size: 16px;
-  font-weight: bold;
-  vertical-align: 4px;
-  color: #ffffff;
+#menuNAVBarLINKS {
+  display: none;
 }
 
 nav#logo-nav {
@@ -92,15 +123,17 @@ nav img#logo-bardini {
 }
 
 /* Formatação do Menu */
-nav#holder-menu {
+/* nav#holder-menu {
   position: relative;
-  top: 25px;
+  top: 80px;
   right: 20px;
-}
+} */
 nav#menu {
   width: 620px;
   height: auto;
   float: left;
+  position: relative;
+  top: 80px;
 }
 
 nav#menu ul {
@@ -154,7 +187,7 @@ nav#menu .menu-estimate a:hover {
 nav img#icone {
   position: relative;
   width: 115px;
-  top: -55px;
+  top: 0px;
   right: -15px;
 }
 
@@ -166,7 +199,7 @@ section#conteudo {
   border-style: ridge;
 }
 
-section#conteudo img {
+section img#content-img {
   width: 1000px;
 }
 
