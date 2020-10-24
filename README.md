@@ -11,5 +11,5 @@
 
 
 ## Version_2-1
-![Imgur](https://i.imgur.com/HEWra6s.png)
-![Imgur](https://i.imgur.com/rtpEufs.png)
+![Imgur](https://i.imgur.com/BLEmBrY.png)
+![Imgur](https://i.imgur.com/WQ43EEo.png)
