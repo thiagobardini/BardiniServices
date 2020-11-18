@@ -1,0 +1,27 @@
+{
+  "name": "bardiniservices-com",
+  "version": "1.0.0",
+  "description": "- [Click here to see the website](http://www.bardiniservices.com)",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "next": "^10.0.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagobardini/bardiniservices-com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagobardini/bardiniservices-com/issues"
+  },
+  "homepage": "https://github.com/thiagobardini/bardiniservices-com#readme"
+}
