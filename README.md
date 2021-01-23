@@ -4,11 +4,11 @@
 ### :neckbeard: Programming Languages: HTML5, CSS3, Bootstrap, NodeJS, JQuery, Popper, SCSS and JavaScript
 
 ## New improvements added: 
-- Carousel fixed
-- stars reviews at the testimonial
-- design footer
+- draftNav.htm -> creating a new navigation bar
+- draftGallery.htm -> Creating a new Photo Gallery with JS
 
 
-## Version_2-2
-![Imgur](https://i.imgur.com/BLEmBrY.png)
-![Imgur](https://i.imgur.com/WQ43EEo.png)
+## Version_2-2-1
+![draftNav](https://i.imgur.com/5U3X1fw.png)
+![draftGallery](https://i.imgur.com/04lJ27h.png)
+
